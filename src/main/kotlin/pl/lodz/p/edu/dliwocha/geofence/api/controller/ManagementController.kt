@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.ResponseStatus
 @RequestMapping("/management")
 class ManagementController {
 
-    @ResponseStatus(HttpStatus.OK)
     @GetMapping("/health")
+    @ResponseStatus(HttpStatus.OK)
     fun healthCheck() {
-
     }
 
 }
+
+
