@@ -24,7 +24,7 @@ class WebSecurityConfiguration(
     }
 
     override fun configure(http: HttpSecurity) {
-        http.httpBasic().disable().csrf().disable()
+        http.httpBasic().disable().csrf().disable().headers().frameOptions().sameOrigin().and()
                 .authorizeRequests()
                 .antMatchers("/h2-console/**").permitAll()
                 .antMatchers("/configuration/**").permitAll()
