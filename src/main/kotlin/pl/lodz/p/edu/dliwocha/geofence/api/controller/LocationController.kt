@@ -6,7 +6,7 @@ import pl.lodz.p.edu.dliwocha.geofence.api.dto.LocalizationDto
 import pl.lodz.p.edu.dliwocha.geofence.api.service.LocalizationService
 
 @RestController
-@RequestMapping("/localization")
+@RequestMapping("/localizations")
 class LocalizationController(
         private val localizationService: LocalizationService
 ) {
